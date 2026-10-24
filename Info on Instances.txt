@@ -1,0 +1,18 @@
+The structure of the files is as follows:
+
+n = number of tasks
+m = number of models
+w = number of workers
+s = number of stations
+
+ct = Cycle time for each model
+
+t = Operational time of task i in model l (n,m)
+
+R = Direct precendence of each task (n,n)   Element (i,k) is 1 if task k is a direct percendence of task i, otherwise 0.
+
+A = Sides required by each task (n,5)   Element (i,r) is 1 if task i requires side r, otherwise 0.
+
+E = Workers who can perform each task (n,w)   Element (i,b) is 1 if task i can be done by worker b.
+
+M = Mutually exclusive tasks (n,n)    Element (i,k) is 1 if tasks i and k are mutually exclusive.
